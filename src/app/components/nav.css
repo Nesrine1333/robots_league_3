@@ -1,0 +1,53 @@
+.boxnav {
+  position: relative;
+}
+.boxnav::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 5rem;
+  padding: 0.1rem;
+  background-clip: padding-box;
+  background: linear-gradient(to right, #98f9ff, #ffffff, #eabfff, #8726b7);
+  mask:
+    linear-gradient(#000000 0 0) content-box,
+    linear-gradient(#000000 0 0);
+  mask-composite: exclude;
+}
+
+.menu {
+  cursor: pointer;
+}
+
+.navmobile {
+  background-image: url('../../../public/nav.svg');
+  background-color: rgba(0, 0, 0, 0.826);
+  background-size: cover;
+  background-position: center;
+  background-clip: padding-box;
+  background-repeat: repeat;
+  /* cursor: pointer; */
+color:white;
+  position: relative;
+  text-align: center;
+  z-index: 10;
+  box-sizing: border-box;
+
+  align-items: center;
+  align-content: center;
+}
+.navmobile::before {
+  border-radius: 2rem;
+  content: '';
+  background: linear-gradient(to right, #EABFFF, #ffffff, #eabfff, #8726b7);
+  top: -1px;
+  left: -1px;
+  bottom: -1px;
+  right: -1px;
+  position: absolute;
+  z-index: -1;
+}
+
+.register{
+  text-shadow:2px 2px 5px whitesmoke; 
+}

@@ -1,0 +1,30 @@
+.backgroundchallenge{
+      background-image: url('../../../public/challenge1.svg');
+
+  background-size: cover;
+  background-position: top;
+
+  background-repeat: no-repeat;
+  /* cursor: pointer; */
+
+  position: relative;
+
+
+}
+
+.button{
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: 5px;
+    font-family: fmbolyarpro700;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: 5px;
+    font-family: fmbolyarpro700;
+    text-shadow:2px 2px 5px whitesmoke; 
+}

@@ -1,0 +1,25 @@
+.footer ::before{
+  background: linear-gradient(to top, #495092, #16182C);
+  height: 100%;
+  position: relative;
+  bottom: 0px;
+}
+
+.footer{
+    content: '';
+ background-image: url('../../../public/magic.png');
+  background-color: rgba(0, 0, 0, 0);
+  background-size: contain;
+  background-position: left;
+  background-clip: padding-box;
+  background-repeat:no-repeat;
+  /* cursor: pointer; */
+
+  position: relative;
+
+  z-index: 10;
+  box-sizing: border-box;
+
+  align-items: center;
+  align-content: center;
+}

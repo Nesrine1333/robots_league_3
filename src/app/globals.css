@@ -1,7 +1,19 @@
 @import "tailwindcss";
 
+
+@font-face {
+  font-family: fmbolyarpro700;
+  src: url('../../public/font/FMBolyarPro-700.ttf');
+}
+
+@font-face {
+  font-family: Novusa;
+  src: url('../../public/font/NovusaRegular.otf');
+}
+
+
 :root {
-  --background: #ffffff;
+  --background: #16182C;
   --foreground: #171717;
 }
 
@@ -24,3 +36,72 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.fonttext {
+  font-family: fmbolyarpro700;
+}
+/* .boxnavcard {
+  position: relative;
+} */
+/* .boxnavcard::before {
+  
+  content: '';
+
+  inset: 0;
+ 
+  padding: 0.1rem;
+  background-clip: padding-box;
+  background: linear-gradient(to right, #98f9ff, #ffffff, #eabfff, #8726b7);
+  mask:
+    linear-gradient(#000000 0 0) content-box,
+    linear-gradient(#000000 0 0);
+  mask-composite: exclude;
+} */
+.nav::before {
+  padding: 0.1rem;
+  content: '';
+  background: linear-gradient(to right, #98f9ff, #ffffff, #eabfff, #8726b7);
+  top: -1px;
+  left: -1px;
+  bottom: -1px;
+  right: -1px;
+  position: absolute;
+  z-index: -1;
+   mask:
+    linear-gradient(#000000 0 0) content-box,
+    linear-gradient(#000000 0 0);
+  mask-composite: exclude;
+}
+
+
+.nav {
+  background-image: url('../../public/nav.svg');
+  background-color: rgba(0, 0, 0, 0.907);
+  background-size: cover;
+  background-position: center;
+  background-clip: padding-box;
+  background-repeat: repeat;
+  /* cursor: pointer; */
+
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  box-sizing: border-box;
+
+  align-items: center;
+  align-content: center;
+}
+
+.nav::before {
+  border-radius:1rem;
+  content: '';
+  background: linear-gradient(to right, #98f9ff, #ffffff, #eabfff, #8726b7);
+  top: -1px;
+  left: -1px;
+  bottom: -1px;
+  right: -1px;
+  position: absolute;
+  z-index: -1;
+}
+
+

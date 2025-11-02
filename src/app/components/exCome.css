@@ -1,0 +1,30 @@
+.background_chairs {
+  /* background-image: url('https://res.cloudinary.com/dytybjqwb/image/upload/v1738272487/final_p1wiig.png'); */
+  background-size: cover;
+  background-color: rgb(230, 229, 221);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cardex {
+  background: linear-gradient(to  bottom, #DC0089, #FF68A4);
+      box-shadow: -9px 9px 0px 0px rgba(0, 0, 0, 0.15);
+        position: relative;
+  z-index: 0; 
+}
+
+/* .cardex::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  padding: 0.04rem;
+  background: linear-gradient(to  bottom, #DC0089, #FF68A4);
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+   
+          
+        
+} */
