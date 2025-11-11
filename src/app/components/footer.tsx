@@ -55,7 +55,7 @@ export default function Footer() {
                   <HoverIcon
                     objectfit="lg:p-2 md:p-2 max-sm:p-2 sm:p-1"
                     className="flex cursor-pointer items-center justify-center rounded-full border-2 border-white p-5 "
-                    href="https://www.instagram.com/ieee_wie_essths/"
+                    href="https://www.instagram.com/robots_league?igsh=MTY5Z21zbGw5c2NiMA=="
                     src={instagram}
                     hoverSrc={instagram}
                     alt="Instagram"
