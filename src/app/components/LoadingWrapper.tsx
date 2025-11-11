@@ -14,7 +14,7 @@ export default function LoadingWrapper({ children }: Props) {
   };
   useEffect(() => {
     // simulate loading or wait for actual resources
-    const timer = setTimeout(() => setIsLoading(false), 1000); // 1s delay
+    const timer = setTimeout(() => setIsLoading(false), 2000); // 1s delay
     return () => clearTimeout(timer);
   }, []);
 

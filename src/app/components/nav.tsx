@@ -59,7 +59,7 @@ export default function Navigation() {
                   <div className="flex gap-2">
             <div className="max-md:hiddden max-sm:hidden sm:hidden md:block lg:block register">
               <a
-                href="https://www.facebook.com/profile.php?id=61552210194532"
+                href="https://www.facebook.com/events/2284061768680704"
                 className=" flex cursor-pointer flex-row justify-between gap-5  p-4 md:mt-0 md:flex-row md:border-0 md:text-sm md:font-medium dark:border-gray-700"
                 target="_blank"
               >

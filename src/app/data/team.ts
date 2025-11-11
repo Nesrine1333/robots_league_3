@@ -111,7 +111,8 @@ title: 'Treasurer',
     name: 'Guizani Mohamed  ',
     
     
-title: 'Oc',
+title: 'Logistics Chief',
+   
    
    
     imageSmall: {
