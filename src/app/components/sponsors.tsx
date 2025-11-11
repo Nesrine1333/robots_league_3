@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export default function Sponsors() {
   
-      const [hoveredIndex, setHoveredIndex] = useState(null); // track hovered card
+      
 
   return (
     <div id="sponsor" className="flex   flex-col  md:justify-center  
@@ -24,7 +24,7 @@ export default function Sponsors() {
       
      
     <div className="flex flex-row justify-between gap-5">
-  {sponsors?.map((speaker, index) => (
+  {sponsors?.map((speaker) => (
     <div 
       className="navsp  flex justify-between  w-full"
       key={speaker.name} 

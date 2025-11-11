@@ -8,7 +8,7 @@ export default function ContactPage() {
   );
 }
 
-export function ContactForm({ title = 'Contact us' }) {
+export function ContactForm() {
   return (
     <section id='location' className="text-white h-full w-full lg:py-8
     px-5

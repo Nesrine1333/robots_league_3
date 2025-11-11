@@ -1,14 +1,12 @@
 'use client';
 import { teamData } from '../data/team';
 import './exCome.css';
-import { HoverIcon } from './hovericon';
+
 import { useState } from "react";
 
-import instagram from '../../../public/Instagram.png';
-import facebook from '../../../public/Facebook.png';
 
 export default function Team() {
-  const [hoveredIndex, setHoveredIndex] = useState(null); // track hovered card
+
   const [showAll, setShowAll] = useState(false); // track whether to show all items
 
   // Get the first 6 items initially, or all items when showAll is true

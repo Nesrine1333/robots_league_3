@@ -1,6 +1,6 @@
 // LoadingPage.jsx
 import { useState, useEffect } from 'react';
-import loading from '../../../public/loading.svg'; // Import your SVG file
+
 
 
 interface LoadingPageProps {

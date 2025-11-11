@@ -1,5 +1,5 @@
 "use client"
-import Image from "next/image";
+
 import  Header from "../app/components/header";
 import  About from "../app/components/about";
 import  Challenges from "../app/components/challenges";
@@ -15,7 +15,7 @@ import ESSTHS from "./components/essths"
 import Footer from "./components/footer"
 
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import LoadingPage from "./components/loading";
 
 export default function Home() {
