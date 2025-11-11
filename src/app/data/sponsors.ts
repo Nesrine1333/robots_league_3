@@ -1,4 +1,4 @@
-import bonepi from '../../../public/Bonepi.png'
+import bonepi from '../../../public/ras_section.png'
 import essths from '../../../public/essths.png'
 import essths_sb from '../../../public/essths_sb.png'
 
@@ -7,7 +7,7 @@ import essths_sb from '../../../public/essths_sb.png'
 export const sponsors = [
   {
 
-    name: 'Bonepi',
+    name: 'ras_section',
     image: {
       url: bonepi,
     }

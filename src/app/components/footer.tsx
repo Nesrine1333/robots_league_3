@@ -43,7 +43,7 @@ export default function Footer() {
                   <HoverIcon
                     objectfit="lg:p-2 md:p-2 max-sm:p-2 sm:p-1"
                     className="flex cursor-pointer items-center justify-center rounded-full border-2 border-white p-5 "
-                    href="https://www.facebook.com/profile.php?id=100068599066993"
+                    href="https://www.facebook.com/profile.php?id=61581734122433"
                     src={facebook}
                     hoverSrc={facebook}
                     alt="Facebook"
@@ -110,11 +110,6 @@ Team                </a>
   </span>
 </div>
 
-              <div className="flex flex-row items-center ">
-            
-              
-                +216 - 99 999 999
-              </div>
             </div>
           </div>
         </div>
