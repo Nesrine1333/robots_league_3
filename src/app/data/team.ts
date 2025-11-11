@@ -108,17 +108,6 @@ title: 'Treasurer',
     },
   },{
     active: true,
-    name: 'Razi chamsa ',
-    
-    
-title: 'Oc',
-   
-   
-    imageSmall: {
-      url: 'excom/guizeni.png',
-    },
-  },{
-    active: true,
     name: 'Guizani Mohamed  ',
     
     
@@ -126,7 +115,7 @@ title: 'Oc',
    
    
     imageSmall: {
-      url: 'excom/Oc.png',
+      url: 'excom/guizeni.png',
     },
   },{
     active: true,
