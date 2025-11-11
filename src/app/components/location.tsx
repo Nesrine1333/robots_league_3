@@ -10,14 +10,14 @@ export default function ContactPage() {
 
 export function ContactForm({ title = 'Contact us' }) {
   return (
-    <section className="text-white h-full w-full lg:py-8
-    
+    <section id='location' className="text-white h-full w-full lg:py-8
+    px-5
      md:px-10 lg:px-60
-    gap-4 lg:max-xl:px-0 sm:max-md:px-6  md:max-lg:px-8 flex-1  ">
+    gap-4 lg:max-xl:px-0 sm:max-md:px-6  md:max-lg:px-8 flex-1 items-center justify-center">
       {/* Google Maps Section */}
       <section className="md:py-12">
         <div className="flex flex-col items-center justify-center">
-          <h1 className="fontheader  font-color lg:mb-7 text-center lg:text-6xl md:text-4xl sm:text-5xl py-10  max-sm:text-2xl max-sm:font-bold lg:leading-full">
+          <h1 className="fontheader  font-color lg:mb-7 text-center lg:text-6xl md:text-4xl sm:text-5xl   max-sm:text-lg max-sm:font-light text-white  tracking-widest">
             We Are Located At ESSTHS University !
           </h1>
           <iframe
@@ -29,7 +29,7 @@ export function ContactForm({ title = 'Contact us' }) {
               border: 0,
               width: '100%',
             }}
-            allowFullScreen="1"
+            allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>

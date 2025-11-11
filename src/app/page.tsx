@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import  Header from "../app/components/header";
 import  About from "../app/components/about";
@@ -14,33 +15,56 @@ import ESSTHS from "./components/essths"
 import Footer from "./components/footer"
 
 
-
+import { useState, useEffect } from 'react';
+import LoadingPage from "./components/loading";
 
 export default function Home() {
+
+    const [isLoading, setIsLoading] = useState(true);
+
+  const handleLoadingComplete = () => {
+    setIsLoading(false);
+  };
   return (
   <>
+
+
+  {isLoading && <LoadingPage onLoadingComplete={handleLoadingComplete} />}
+{!isLoading && <div>
+  <div className="flex flex-col gap-10">
     <div className="w-full">
         {/* <Navigation /> */}
         <Header />
       </div>
 
-      <div className="max-md:px-10 max-sm:px-10 sm:px-10 md:px-10 lg:px-16 lg:py-8">
+      <div className=" px-8 sm:max-md:px-10 md:max-lg:px-15 lg:max-xl:px-30 min-xl:px-40 lg:py-8">
         <main className="item-center flex w-full flex-col content-center justify-center max-sm:gap-5 sm:gap-10 md:gap-15 lg:gap-20">
-        {/* <About/>
-        <PastEvents events={events}/> */}
+         <About/>
+   
       
         </main>
       </div>
-        {/* <Challenges/>
-        <Team/>
+      <div>
+            <PastEvents events={events}/> 
+        <Challenges/></div>
+        
+         <div className=" px-8 sm:max-md:px-10 md:max-lg:px-15 lg:max-xl:px-30 min-xl:px-40 lg:py-8">
+ <main className="item-center flex w-full flex-col content-center justify-center max-sm:gap-5 sm:gap-10 md:gap-15 lg:gap-20">
+         <Team/>
         <Host/>
         <ESSTHS/>
         <Sponsors/>
-        <ContactPage/> */}
+          </main>
+         </div>
+         
+<div> <ContactPage/></div>
+       
+        </div> 
       <footer className="w-full ">
         {' '}
     <Footer/>
       </footer>
+      </div>}
   </>
   );
 }

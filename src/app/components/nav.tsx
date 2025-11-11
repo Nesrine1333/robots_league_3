@@ -11,12 +11,12 @@ export default function Navigation() {
 
   return (
     <>
-      <nav className="w-full bg-transparent fonttext p-6 sm:p-8  rounded-full text-white">
-        <div className="flex w-full flex-nowrap max-sm:justify-start max-sm:px-0 sm:px-0 md:justify-center lg:justify-center lg:px-18 rounded-full">
+      <nav className="w-full  bg-transparent fonttext p-6 sm:p-8  rounded-full text-white">
+        <div className="flex w-full  flex-nowrap max-sm:justify-start max-sm:px-0 sm:px-0 md:justify-center lg:justify-center lg:px-18 rounded-full">
         
           <div className="max-md:hiddden max-sm:hidden sm:hidden md:block lg:block rounded-full" >
 
-            <div className="nav boxnav fonttext  flex flex-row justify-center gap-14  p-4 md:gap-5 lg:gap-14 rounded-full">
+            <div className="nav  fonttext  flex flex-row justify-center gap-14  p-4 md:gap-5 lg:gap-14 rounded-full">
 
                 <div className="max-md:hiddden max-sm:hidden sm:hidden md:block lg:block">
             <div className="flex w-auto items-center">
@@ -25,7 +25,7 @@ export default function Navigation() {
                   className="flex items-center justify-center"
                   style={{ position: 'relative', width: '100%', height: '100%' }}
                 >
-                  <a to="/">
+                 
                     <Image
                       loading="lazy"
                       src={profilePic}
@@ -34,26 +34,26 @@ export default function Navigation() {
                       layout="fill"
                       objectFit="contain"
                     />
-                  </a>
+                  
                 </div>
               </div>
             </div>
           </div>
-              <a href="#home" className="md:text cursor-pointer max-sm:text-sm/6 sm:text-sm">
+              <a href="#challenges" className="md:text cursor-pointer max-sm:text-sm/6 sm:text-sm">
                   CHALLENGES
               </a>
 
-              <a href="#about" className="md:text max-sm:text-sm/6 sm:text-sm" aria-current="About">
+              <a href="#team" className="md:text max-sm:text-sm/6 sm:text-sm" >
                 TEAM
               </a>
-              <a href="#value" className="md:text max-sm:text-sm/6 sm:text-sm">
+              <a href="#host" className="md:text max-sm:text-sm/6 sm:text-sm">
                 HOST
               </a>
-              <a href="#activities" className="md:text max-sm:text-sm/6 sm:text-sm">
+              <a href="#sponsor" className="md:text max-sm:text-sm/6 sm:text-sm">
                 SPONSORS
               </a>
     
-              <a href="#faq" className="md:text max-sm:text-sm/6 sm:text-sm">
+              <a href="#location" className="md:text max-sm:text-sm/6 sm:text-sm">
                 CONTACT
               </a>
                   <div className="flex gap-2">
@@ -74,13 +74,13 @@ export default function Navigation() {
        
           <div className="w-full rounded-2xl max-lg:hidden max-md:hidden max-sm:block sm:block md:hidden justify-between">
             <div className="flex w-full justify-between">
-              <div className="nav boxnav flex w-full justify-between rounded-4xl p-2">
+              <div className="nav  flex w-full justify-between rounded-4xl p-2">
                 <div className="w-10 sm:w-30">
                   <div
                     className="flex items-center"
                     style={{ position: 'relative', width: '100%', height: '2rem' }}
                   >
-                    <a to="/">
+                    <a href="#">
                       <Image
                         loading="lazy"
                         src={profilePic}
@@ -147,24 +147,24 @@ export default function Navigation() {
       {isMenuOpen && (
         <div className="z-50 lg:hidden fixed top-0  flex h-full w-full">
           <div
-            className="navmobile boxnav fixed top-0 z-50 flex h-full w-full flex-col justify-center gap-14 p-4 backdrop-blur-xl max-sm:items-center max-sm:justify-center"
+            className="navmobile  fonttext fixed top-0 z-50 flex h-full w-full flex-col justify-center gap-14 p-4 backdrop-blur-xl max-sm:items-center max-sm:justify-center"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <a href="#challenges" className="md:text cursor-pointer max-sm:text-sm/6 sm:text-sm">
               CHALLENGES
             </a>
 
-            <a href="#about" className="md:text max-sm:text-sm/6 sm:text-sm" aria-current="About">
+            <a href="#team" className="md:text max-sm:text-sm/6 sm:text-sm">
               TEAM
             </a>
             <a href="#host" className="md:text max-sm:text-sm/6 sm:text-sm">
               HOST
             </a>
-            <a href="#activities" className="md:text max-sm:text-sm/6 sm:text-sm">
+            <a href="#sponsor" className="md:text max-sm:text-sm/6 sm:text-sm">
               SPONSORS
             </a>
          
-            <a href="#faq" className="md:text max-sm:text-sm/6 sm:text-sm">
+            <a href="#location" className="md:text max-sm:text-sm/6 sm:text-sm">
               CONTACT
             </a>
           </div>

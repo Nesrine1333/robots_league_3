@@ -23,7 +23,7 @@ export default function Footer() {
                   className="flex items-center justify-center"
                   style={{ position: 'relative', width: '100%', height: '100%' }}
                 >
-                  <a to="/">
+                  
                     <Image
                       loading="lazy"
                       src={logo}
@@ -32,7 +32,7 @@ export default function Footer() {
                       layout="fill"
                       objectFit="contain"
                     />
-                  </a>
+                  
                 </div>
               </div>
               <div className="flex w-full flex-row justify-center gap-2">
@@ -76,26 +76,26 @@ export default function Footer() {
                 </a>
               </div>
               <div>
-                <a href="#value" className="cursor-pointer">
+                <a href="#challenges" className="cursor-pointer">
                   Challenges
                 </a>
               </div>
               <div>
-                <a href="#activities" className="cursor-pointer">
-Tealm                </a>
+                <a href="#team" className="cursor-pointer">
+Team                </a>
               </div>
               <div>
-                <a href="#faq" className="cursor-pointer">
+                <a href="#host"className="cursor-pointer">
                   Host
                 </a>
               </div>
               <div>
-                <a href="#faq" className="cursor-pointer">
+                <a href="#sponsor" className="cursor-pointer">
                   Sponsors
                 </a>
               </div>
                <div>
-                <a href="#faq" className="cursor-pointer">
+                <a href="#location" className="cursor-pointer">
                   Contact
                 </a>
               </div>

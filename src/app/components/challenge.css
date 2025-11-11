@@ -1,30 +1,99 @@
-.backgroundchallenge{
-      background-image: url('../../../public/challenge1.svg');
-
+.backgroundchallenge {
+  background-image: url('../../../public/challenge1.svg');
   background-size: cover;
   background-position: top;
-
   background-repeat: no-repeat;
-  /* cursor: pointer; */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  position: relative;
+.button {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid white;
+  border-radius: 6px;
+  font-family: fmbolyarpro700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover {
+  text-shadow: 2px 2px 5px whitesmoke;
+  transform: scale(1.05);
+}
 
+.boxnav {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid white;
+  border-radius: 3rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.boxnav:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  text-shadow: 1px 1px 5px #fff;
+}
+
+@media (width<600) {
+  .paragrapgch{
+    font-size: 0.8rem;
+}
 
 }
 
-.button{
-    background-color: rgba(0, 0, 0, 0.4);
-    border: 1px solid white;
-    padding: 1rem;
-    border-radius: 5px;
-    font-family: fmbolyarpro700;
-    cursor: pointer;
+@media (width<450) {
+  .paragrapgch{
+    font-size: 0.6rem;
 }
-.button:hover{
-    background-color: rgba(0, 0, 0, 0.4);
-    border: 1px solid white;
-    padding: 1rem;
-    border-radius: 5px;
-    font-family: fmbolyarpro700;
-    text-shadow:2px 2px 5px whitesmoke; 
+
 }
+@media (width<400) {
+  .paragrapgch{
+    font-size: 0.5rem;
+}
+
+}
+.text-with-gradient-border {
+ 
+  color: white;
+}
+
+.text-with-gradient-border::before{
+
+      --ebkitTextStroke: 3px transparent;
+      background: linear-gradient(45deg, #16182C, #495092);
+      --WebkitBackgroundClip: text;
+      background-clip: text;
+    
+      z-index: 1
+}
+
+@keyframes strokeColorChange {
+  0% {
+    -webkit-text-stroke-color: #495092;
+  }
+  50% {
+    -webkit-text-stroke-color: #16182C;
+  }
+  100% {
+    -webkit-text-stroke-color: #495092;
+  }
+}
+@keyframes colorCycle {
+    0% {
+      -webkit-text-stroke: 3px #495092;
+    }
+    25% {
+      -webkit-text-stroke: 3px #6a7ccc;
+    }
+    50% {
+      -webkit-text-stroke: 3px #8fa3ff;
+    }
+    75% {
+      -webkit-text-stroke: 3px #6a7ccc;
+    }
+    100% {
+      -webkit-text-stroke: 3px #495092;
+    }
+  }

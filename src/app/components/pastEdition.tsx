@@ -3,17 +3,19 @@ import Image from 'next/image';
 import rbl1 from "../../../public/RobotsLeague1.png"
 import rbl2 from "../../../public/RobotsLeague2.png"
 
-export default function PastEvents({ events }) {
+
+
+export default function PastEvents({ events }: PastEventsProps) {
 
  
   return (
-    <section id="value">
-      <div className="flex flex-col p-0  content-center items-center gap-10 lg:max-xl:px-0 sm:max-md:px-6  md:max-lg:px-8     lg:px-14">
+    <section id="edition">
+      <div className="text-white flex flex-col p-0  content-center items-center  ">
         <div className="flex flex-col content-center items-center gap-2 max-sm:p-0 sm:p-0 lg:px-14 max-lg:px-10 md:px-10 ">
-          <h2 className="fontheader  font-color  text-right lg:text-6xl md:text-4xl sm:text-5xl   max-sm:text-2xl  text-white">Past Editions </h2>
+          <h2 className="fontheader  font-color  text-left lg:text-6xl md:max-lg:text-4xl lg:max-xl:text-6xl  max-sm:text-3xl sm:max-md:text-3xl">Past Editions </h2>
           {/* <p className='text-black'>Fields Taht We tackle within our activities</p> */}
         </div>
-<div className='flex flex-col align-middle items-center justify-center'><div className=" mx-auto grid max-w-6xl max-sm:max-w-auto max-sm:grid-cols-1 max-sm:gap-6 sm:max-w-full sm:grid-cols-2 sm:gap-6  content-center justify-center lg:gap-6">
+<div className='flex flex-col align-middle items-center justify-center'><div className=" mx-auto grid max-w-6xl max-sm:max-w-auto max-sm:grid-cols-2 max-sm:gap-6 sm:max-w-full sm:grid-cols-2 sm:gap-6  content-center justify-center lg:gap-6">
          {events.map((value, index) => (
   <div
     key={index}
@@ -51,16 +53,21 @@ export default function PastEvents({ events }) {
 }
 
 
+interface Event {
+  title: string;
+  content: any; // Replace 'any' with the actual type of your content
+}
 
-export const events = [
+interface PastEventsProps {
+  events: Event[];
+}
+export const events: Event[] = [
   {
-    title: 'RobotsLeague1 ',
-    content:
-    rbl1,
+    title: 'RobotsLeague1',
+    content: rbl1,
   },
   {
-    title: 'RobotsLeague2 ',
-    content:
-      rbl2,
+    title: 'RobotsLeague2',
+    content: rbl2,
   }
 ];
